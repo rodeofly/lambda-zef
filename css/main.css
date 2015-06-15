@@ -1,0 +1,709 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #e44d26;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #e44d26;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #f16529;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.noTitleStuff .ui-dialog-titlebar {
+  display:none
+}
+/*  
+button, input {
+  height : 5vh;
+  display : inline-block;
+  line-height: auto;
+  font-size : 1vw !important;
+  border-radius : 1em;
+}
+
+button:disabled {
+    background: rgba(0,0,0,0.5);
+}
+
+
+#checkboxes button {
+  min-width: 5vw;
+  position: relative;
+  display : inline-block;
+  margin:auto;
+}
+#top-panel-buttons {
+  display : flex;
+  justify-content:center;
+}
+.ui-selectmenu-button {
+  background : rgba(255,255,255,0.5) !important;
+  color : black !important;
+}
+*/
+#titre  {
+  position : absolute;
+  top   : 2.5vw;
+  right    : 2.5vw;
+font-family: 'Lobster', cursive;
+  font-weight : bolder;
+  font-size  : 12.5vh;
+  color : orange;
+
+}
+#credits {
+  position : absolute;
+  bottom   : 1vw;
+  right    : 1vw;
+font-family: 'Lobster', cursive;
+  font-size  : 1em;
+  color : white;
+}
+
+pre.code{
+  background:#F8F8FF;
+  border:black dashed 1px;
+  padding:6px;
+  white-space: pre-line;
+  color : blue;
+}
+#game-container {
+  margin : auto;
+  position : relative;
+  width:100%;
+  height:100vh;
+  background-image : url('images/Jungle_wallpaper_by_dakki000.jpg');
+  background-size : 100% 100%;
+  overflow-x: hidden;
+}
+
+#prompt {
+  position : relative;
+  width : 100%;
+}
+
+.ui-draggable-helper { 
+    /*z-index: 5000;*/
+}
+
+
+/* sliders */
+#slider-animation span.ui-slider-handle.ui-state-default {background: white url(svg/chrono.svg) no-repeat scroll 50% 50%;}
+#slider-zoom  span.ui-slider-handle.ui-state-default {background: white url(svg/zoom.svg) no-repeat scroll 50% 50%;}
+
+#viewport {
+ background : rgba(0,0,0,0.5);
+ position : absolute;
+ height : 100vh;
+ width : 100vw;
+ top : 0vh;
+ right : 0vw;
+}
+
+
+#console {
+  width : 100%;
+  display: inline-flex;
+  flex-flow : row wrap;
+  justify-content: stretch;
+  background-color : rgba(0,0,0,0.5);
+
+  border-radius : 1em;
+}
+#console button {
+  min-width : 5em;
+  flex : 2;
+}
+
+#command-panel {
+  position : absolute;
+  display: inline-block;
+  width : 25%;
+  top:1vw;
+  left:35vW;
+  padding : 1vw;
+  border-radius : 1em;
+  background-color : rgba(0,0,0,0.5);
+  text-align : center;
+}
+
+/* select menu */
+#choose-color{
+ position :relative;
+ width:4vw;
+}
+
+ul#choose-color-menu.ui-menu, ul#exercices-menu.ui-menu {
+  position: fixed !important;
+  display : inline-block;
+  top : 0;
+  left : 0;
+  height : 100%;
+  width :  100%;
+  background : transparent !important;
+  border : 0;  
+}
+
+#choose-color-menu.ui-menu .ui-menu-item {
+  display : inline-block;
+  margin : 0 !important;
+  width   : 12%;
+  height  : 12%;
+  border  : solid black 3px;
+  border-radius : 100%;
+  margin : 1% !important;
+  
+}
+
+#exercices-menu.ui-menu .ui-menu-item {
+  display : inline-block;
+  margin : 0 !important;
+  width   : 12%;
+  height  : 12%;
+  border  : solid black 3px;
+  border-radius : 1em;
+  margin : 1% !important;
+}
+
+
+#panels {
+  position : relative;
+  display : block;
+  margin : 0;
+  width : 100vw;
+  height : 100vh;
+  display : flex;
+  align-items: stretch;
+  border : 0.2vw solid black;
+  background-color : rgba(255,255,255,0.8);
+}
+
+#root {
+  position:relative;
+  width : auto;
+  height : auto;
+  display : flex;
+  flex-grow: 2; 
+  overflow-x:scroll;
+  overflow-y:scroll;
+}
+
+#exercice {
+  position : relative;
+  width:  50%;
+  height: 100%;
+  text-align: center;
+  background : rgba(255,255,255,0.5);
+}
+#contenu-exercice {
+  padding: 2vw;
+}
+#exercice-panel {
+  position : relative ;
+  display : inline-block;
+  width : 100%;
+}
+#exercice-texte {
+  position:relative;
+  height : 25%;
+  overflow : hidden;
+  overflow-y : scroll;
+  border : solid black 1px;
+}
+#exercice-fixed-part {
+  position : absolute;
+  width : 100%;
+  padding-bottom : 1%;
+  bottom : 0;
+}
+
+#compte-rendu{
+  position:relative;
+  margin: 0 auto;
+  background-color : rgba(0,0,0,0.5);
+  text-align:center;
+  text-align:center;
+  position:relative;
+  min-height : 4vw;
+  width : 50%;
+  padding : 2vw;
+}
+
+#compte-rendu > [data-variable="?"]{
+  width:100%;
+  height:100%;
+}
+
+/* Pack circles */
+/************************************************************/
+circle {
+
+  fill-opacity: 1;
+  stroke: rgb(0, 0, 0);
+  stroke-width: 2px;
+}
+
+.leaf circle {
+  fill-opacity: 1;
+}
+
+text {
+  font: 10px sans-serif;
+}
+/************************************************************/
+
+.item.svg-container {
+  position:relative;
+}
+#root_definition.definition_drop, #solution_definition.definition_drop {
+  position : absolute;
+  top : 0;left:0;
+  width : 100%;
+  height: 100%;
+}
+svg {
+  position:relative;
+  height : 100%;
+  width : 100%;
+}
+.svg-container {
+  width:100%;
+  height : 60px;
+  position : absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.lambda.priorite.dropped, .lambda.dropped {
+  position:relative;
+  text-align:center;
+   /* this can zoom-in-out */
+  min-width  : 120px;
+  min-height : 60px;
+  padding-top: 60px;
+  vertical-align: top;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row no-wrap;
+}
+
+.variable.dropped{
+  position:relative;
+  display: inline-block;
+  vertical-align: top;
+  text-align:center;
+  /* this can zoom-in-out */
+  width  : 120px;
+  height : 60px;
+}
+
+
+
+.definition_drop, .application_drop {
+  position : absolute;
+  border:black dashed 1px;
+  width : 60px;
+  height: 60px;
+}
+.definition_drop {
+  bottom : 0;
+  left : 0;
+}
+.application_drop {
+  top : 0;
+  right : 0;
+}
+.lambda.dropped > .definition_drop {
+  position : inherit;
+  bottom : 0;
+  left : 0;
+}
+
+.variable.dropped::before {
+  content : none;
+}
+.variable.dropped.show_pseudo::before {
+  
+  content: attr(data-variable);
+  position: absolute;
+  z-index: 100;
+}
+.lambda.dropped::before {
+  content : none;
+}
+.lambda.dropped.show_pseudo::before {
+  
+  content: attr(data-variable);
+  position: absolute;
+  left : 50%;
+  top : 0;
+  z-index: 100;
+}
+.lambda.priorite.dropped:before {
+  content: none;
+}
+/* ADD THIS TO CSS */
+div#preloaded-images, div.exemple {
+   position: absolute;
+   overflow: hidden;
+   left: -9999px; 
+   top: -9999px;
+   height: 1px;
+   width: 1px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 90%; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
